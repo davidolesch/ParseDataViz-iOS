@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3A0A9131ACB183C0033E195 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A0A9121ACB183C0033E195 /* main.m */; };
+		D3A0A9161ACB183C0033E195 /* PDVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A0A9151ACB183C0033E195 /* PDVAppDelegate.m */; };
+		D3A0A91C1ACB183C0033E195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A0A91A1ACB183C0033E195 /* Main.storyboard */; };
+		D3A0A91E1ACB183C0033E195 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A0A91D1ACB183C0033E195 /* Images.xcassets */; };
+		D3A0A9211ACB183C0033E195 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A0A91F1ACB183C0033E195 /* LaunchScreen.xib */; };
+		D3A0A93C1ACB1DEF0033E195 /* PDVAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A0A93B1ACB1DEF0033E195 /* PDVAppDependencies.m */; };
+		D3A0A93F1ACB22F40033E195 /* PDVAppWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A0A93E1ACB22F40033E195 /* PDVAppWireframe.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3A0A9271ACB183C0033E195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A0A9051ACB183C0033E195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3A0A90C1ACB183C0033E195;
+			remoteInfo = "ParseDataViz-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3A0A90D1ACB183C0033E195 /* ParseDataViz-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParseDataViz-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A0A9111ACB183C0033E195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A0A9121ACB183C0033E195 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3A0A9141ACB183C0033E195 /* PDVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDVAppDelegate.h; sourceTree = "<group>"; };
+		D3A0A9151ACB183C0033E195 /* PDVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDVAppDelegate.m; sourceTree = "<group>"; };
+		D3A0A91B1ACB183C0033E195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3A0A91D1ACB183C0033E195 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D3A0A9201ACB183C0033E195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D3A0A9261ACB183C0033E195 /* ParseDataViz-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParseDataViz-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A0A92B1ACB183C0033E195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A0A93A1ACB1DEF0033E195 /* PDVAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVAppDependencies.h; sourceTree = "<group>"; };
+		D3A0A93B1ACB1DEF0033E195 /* PDVAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVAppDependencies.m; sourceTree = "<group>"; };
+		D3A0A93D1ACB22F40033E195 /* PDVAppWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVAppWireframe.h; sourceTree = "<group>"; };
+		D3A0A93E1ACB22F40033E195 /* PDVAppWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVAppWireframe.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3A0A90A1ACB183C0033E195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A0A9231ACB183C0033E195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3A0A9041ACB183C0033E195 = {
+			isa = PBXGroup;
+			children = (
+				D3A0A90F1ACB183C0033E195 /* ParseDataViz-iOS */,
+				D3A0A9291ACB183C0033E195 /* ParseDataViz-iOSTests */,
+				D3A0A90E1ACB183C0033E195 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3A0A90E1ACB183C0033E195 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3A0A90D1ACB183C0033E195 /* ParseDataViz-iOS.app */,
+				D3A0A9261ACB183C0033E195 /* ParseDataViz-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3A0A90F1ACB183C0033E195 /* ParseDataViz-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D3A0A9361ACB1C860033E195 /* Classes */,
+				D3A0A9371ACB1CAB0033E195 /* Resources */,
+				D3A0A9101ACB183C0033E195 /* Supporting Files */,
+			);
+			path = "ParseDataViz-iOS";
+			sourceTree = "<group>";
+		};
+		D3A0A9101ACB183C0033E195 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3A0A9111ACB183C0033E195 /* Info.plist */,
+				D3A0A9121ACB183C0033E195 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3A0A9291ACB183C0033E195 /* ParseDataViz-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3A0A92A1ACB183C0033E195 /* Supporting Files */,
+			);
+			path = "ParseDataViz-iOSTests";
+			sourceTree = "<group>";
+		};
+		D3A0A92A1ACB183C0033E195 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3A0A92B1ACB183C0033E195 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3A0A9361ACB1C860033E195 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D3A0A9381ACB1CD90033E195 /* Common */,
+				D3A0A9391ACB1CE30033E195 /* Modules */,
+				D3A0A9141ACB183C0033E195 /* PDVAppDelegate.h */,
+				D3A0A9151ACB183C0033E195 /* PDVAppDelegate.m */,
+				D3A0A93A1ACB1DEF0033E195 /* PDVAppDependencies.h */,
+				D3A0A93B1ACB1DEF0033E195 /* PDVAppDependencies.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		D3A0A9371ACB1CAB0033E195 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3A0A91A1ACB183C0033E195 /* Main.storyboard */,
+				D3A0A91D1ACB183C0033E195 /* Images.xcassets */,
+				D3A0A91F1ACB183C0033E195 /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D3A0A9381ACB1CD90033E195 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D3A0A93D1ACB22F40033E195 /* PDVAppWireframe.h */,
+				D3A0A93E1ACB22F40033E195 /* PDVAppWireframe.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		D3A0A9391ACB1CE30033E195 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3A0A90C1ACB183C0033E195 /* ParseDataViz-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3A0A9301ACB183C0033E195 /* Build configuration list for PBXNativeTarget "ParseDataViz-iOS" */;
+			buildPhases = (
+				D3A0A9091ACB183C0033E195 /* Sources */,
+				D3A0A90A1ACB183C0033E195 /* Frameworks */,
+				D3A0A90B1ACB183C0033E195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ParseDataViz-iOS";
+			productName = "ParseDataViz-iOS";
+			productReference = D3A0A90D1ACB183C0033E195 /* ParseDataViz-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3A0A9251ACB183C0033E195 /* ParseDataViz-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3A0A9331ACB183C0033E195 /* Build configuration list for PBXNativeTarget "ParseDataViz-iOSTests" */;
+			buildPhases = (
+				D3A0A9221ACB183C0033E195 /* Sources */,
+				D3A0A9231ACB183C0033E195 /* Frameworks */,
+				D3A0A9241ACB183C0033E195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3A0A9281ACB183C0033E195 /* PBXTargetDependency */,
+			);
+			name = "ParseDataViz-iOSTests";
+			productName = "ParseDataViz-iOSTests";
+			productReference = D3A0A9261ACB183C0033E195 /* ParseDataViz-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3A0A9051ACB183C0033E195 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "David Olesch";
+				TargetAttributes = {
+					D3A0A90C1ACB183C0033E195 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					D3A0A9251ACB183C0033E195 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = D3A0A90C1ACB183C0033E195;
+					};
+				};
+			};
+			buildConfigurationList = D3A0A9081ACB183C0033E195 /* Build configuration list for PBXProject "ParseDataViz-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3A0A9041ACB183C0033E195;
+			productRefGroup = D3A0A90E1ACB183C0033E195 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3A0A90C1ACB183C0033E195 /* ParseDataViz-iOS */,
+				D3A0A9251ACB183C0033E195 /* ParseDataViz-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3A0A90B1ACB183C0033E195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A0A91C1ACB183C0033E195 /* Main.storyboard in Resources */,
+				D3A0A9211ACB183C0033E195 /* LaunchScreen.xib in Resources */,
+				D3A0A91E1ACB183C0033E195 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A0A9241ACB183C0033E195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3A0A9091ACB183C0033E195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A0A9161ACB183C0033E195 /* PDVAppDelegate.m in Sources */,
+				D3A0A93F1ACB22F40033E195 /* PDVAppWireframe.m in Sources */,
+				D3A0A93C1ACB1DEF0033E195 /* PDVAppDependencies.m in Sources */,
+				D3A0A9131ACB183C0033E195 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A0A9221ACB183C0033E195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3A0A9281ACB183C0033E195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3A0A90C1ACB183C0033E195 /* ParseDataViz-iOS */;
+			targetProxy = D3A0A9271ACB183C0033E195 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3A0A91A1ACB183C0033E195 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3A0A91B1ACB183C0033E195 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3A0A91F1ACB183C0033E195 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3A0A9201ACB183C0033E195 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3A0A92E1ACB183C0033E195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3A0A92F1ACB183C0033E195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3A0A9311ACB183C0033E195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ParseDataViz-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3A0A9321ACB183C0033E195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ParseDataViz-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D3A0A9341ACB183C0033E195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ParseDataViz-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParseDataViz-iOS.app/ParseDataViz-iOS";
+			};
+			name = Debug;
+		};
+		D3A0A9351ACB183C0033E195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ParseDataViz-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParseDataViz-iOS.app/ParseDataViz-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3A0A9081ACB183C0033E195 /* Build configuration list for PBXProject "ParseDataViz-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A0A92E1ACB183C0033E195 /* Debug */,
+				D3A0A92F1ACB183C0033E195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3A0A9301ACB183C0033E195 /* Build configuration list for PBXNativeTarget "ParseDataViz-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A0A9311ACB183C0033E195 /* Debug */,
+				D3A0A9321ACB183C0033E195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3A0A9331ACB183C0033E195 /* Build configuration list for PBXNativeTarget "ParseDataViz-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A0A9341ACB183C0033E195 /* Debug */,
+				D3A0A9351ACB183C0033E195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3A0A9051ACB183C0033E195 /* Project object */;
+}
