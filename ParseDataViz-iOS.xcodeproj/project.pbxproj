@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		D34C275C1ACC4AB8004F741E /* PDVAppListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C275B1ACC4AB8004F741E /* PDVAppListPresenter.m */; };
 		D34C27601ACC5315004F741E /* PDVAppListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C275F1ACC5315004F741E /* PDVAppListInteractor.m */; };
+		D34C276A1ACC5BA2004F741E /* PDVClassListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C27651ACC5BA2004F741E /* PDVClassListInteractor.m */; };
+		D34C276B1ACC5BA2004F741E /* PDVClassListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C27671ACC5BA2004F741E /* PDVClassListPresenter.m */; };
+		D34C276C1ACC5BA2004F741E /* PDVClassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C27691ACC5BA2004F741E /* PDVClassListViewController.m */; };
+		D34C27701ACC6E0F004F741E /* PDVDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C276F1ACC6E0E004F741E /* PDVDataManager.m */; };
 		D3A0A9131ACB183C0033E195 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A0A9121ACB183C0033E195 /* main.m */; };
 		D3A0A9161ACB183C0033E195 /* PDVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A0A9151ACB183C0033E195 /* PDVAppDelegate.m */; };
 		D3A0A91C1ACB183C0033E195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A0A91A1ACB183C0033E195 /* Main.storyboard */; };
@@ -35,6 +39,16 @@
 		D34C275D1ACC4BD8004F741E /* PDVAppListInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDVAppListInteractorIO.h; sourceTree = "<group>"; };
 		D34C275E1ACC5315004F741E /* PDVAppListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVAppListInteractor.h; sourceTree = "<group>"; };
 		D34C275F1ACC5315004F741E /* PDVAppListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVAppListInteractor.m; sourceTree = "<group>"; };
+		D34C27621ACC5BA2004F741E /* PDVClassListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVClassListViewController.h; sourceTree = "<group>"; };
+		D34C27631ACC5BA2004F741E /* PDVClassListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVClassListPresenter.h; sourceTree = "<group>"; };
+		D34C27641ACC5BA2004F741E /* PDVClassListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVClassListView.h; sourceTree = "<group>"; };
+		D34C27651ACC5BA2004F741E /* PDVClassListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVClassListInteractor.m; sourceTree = "<group>"; };
+		D34C27661ACC5BA2004F741E /* PDVClassListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVClassListInteractor.h; sourceTree = "<group>"; };
+		D34C27671ACC5BA2004F741E /* PDVClassListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVClassListPresenter.m; sourceTree = "<group>"; };
+		D34C27681ACC5BA2004F741E /* PDVClassListInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVClassListInteractorIO.h; sourceTree = "<group>"; };
+		D34C27691ACC5BA2004F741E /* PDVClassListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVClassListViewController.m; sourceTree = "<group>"; };
+		D34C276E1ACC6E0E004F741E /* PDVDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVDataManager.h; sourceTree = "<group>"; };
+		D34C276F1ACC6E0E004F741E /* PDVDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVDataManager.m; sourceTree = "<group>"; };
 		D3A0A90D1ACB183C0033E195 /* ParseDataViz-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParseDataViz-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A0A9111ACB183C0033E195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3A0A9121ACB183C0033E195 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,7 +65,7 @@
 		D3A0A93E1ACB22F40033E195 /* PDVAppWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVAppWireframe.m; sourceTree = "<group>"; };
 		D3A0A9421ACB29F70033E195 /* PDVAppListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVAppListViewController.h; sourceTree = "<group>"; };
 		D3A0A9431ACB29F70033E195 /* PDVAppListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVAppListViewController.m; sourceTree = "<group>"; };
-		D3A0A9461ACB30CD0033E195 /* PDVListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDVListView.h; sourceTree = "<group>"; };
+		D3A0A9461ACB30CD0033E195 /* PDVAppListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDVAppListView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D34C27611ACC5A6F004F741E /* ClassList */ = {
+			isa = PBXGroup;
+			children = (
+				D34C27621ACC5BA2004F741E /* PDVClassListViewController.h */,
+				D34C27691ACC5BA2004F741E /* PDVClassListViewController.m */,
+				D34C27631ACC5BA2004F741E /* PDVClassListPresenter.h */,
+				D34C27671ACC5BA2004F741E /* PDVClassListPresenter.m */,
+				D34C27661ACC5BA2004F741E /* PDVClassListInteractor.h */,
+				D34C27651ACC5BA2004F741E /* PDVClassListInteractor.m */,
+				D34C276D1ACC5BAA004F741E /* Protocols */,
+			);
+			name = ClassList;
+			sourceTree = "<group>";
+		};
+		D34C276D1ACC5BAA004F741E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D34C27641ACC5BA2004F741E /* PDVClassListView.h */,
+				D34C27681ACC5BA2004F741E /* PDVClassListInteractorIO.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		D3A0A9041ACB183C0033E195 = {
 			isa = PBXGroup;
 			children = (
@@ -130,10 +167,6 @@
 			children = (
 				D3A0A9381ACB1CD90033E195 /* Common */,
 				D3A0A9391ACB1CE30033E195 /* Modules */,
-				D3A0A9141ACB183C0033E195 /* PDVAppDelegate.h */,
-				D3A0A9151ACB183C0033E195 /* PDVAppDelegate.m */,
-				D3A0A93A1ACB1DEF0033E195 /* PDVAppDependencies.h */,
-				D3A0A93B1ACB1DEF0033E195 /* PDVAppDependencies.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -151,8 +184,14 @@
 		D3A0A9381ACB1CD90033E195 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D3A0A9141ACB183C0033E195 /* PDVAppDelegate.h */,
+				D3A0A9151ACB183C0033E195 /* PDVAppDelegate.m */,
+				D3A0A93A1ACB1DEF0033E195 /* PDVAppDependencies.h */,
+				D3A0A93B1ACB1DEF0033E195 /* PDVAppDependencies.m */,
 				D3A0A93D1ACB22F40033E195 /* PDVAppWireframe.h */,
 				D3A0A93E1ACB22F40033E195 /* PDVAppWireframe.m */,
+				D34C276E1ACC6E0E004F741E /* PDVDataManager.h */,
+				D34C276F1ACC6E0E004F741E /* PDVDataManager.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -161,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				D3A0A9411ACB29D80033E195 /* AppList */,
+				D34C27611ACC5A6F004F741E /* ClassList */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -182,7 +222,7 @@
 		D3A0A9451ACB30A80033E195 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				D3A0A9461ACB30CD0033E195 /* PDVListView.h */,
+				D3A0A9461ACB30CD0033E195 /* PDVAppListView.h */,
 				D34C275D1ACC4BD8004F741E /* PDVAppListInteractorIO.h */,
 			);
 			name = Protocols;
@@ -289,9 +329,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3A0A9161ACB183C0033E195 /* PDVAppDelegate.m in Sources */,
+				D34C276B1ACC5BA2004F741E /* PDVClassListPresenter.m in Sources */,
 				D34C275C1ACC4AB8004F741E /* PDVAppListPresenter.m in Sources */,
+				D34C276A1ACC5BA2004F741E /* PDVClassListInteractor.m in Sources */,
+				D34C27701ACC6E0F004F741E /* PDVDataManager.m in Sources */,
 				D3A0A93F1ACB22F40033E195 /* PDVAppWireframe.m in Sources */,
 				D34C27601ACC5315004F741E /* PDVAppListInteractor.m in Sources */,
+				D34C276C1ACC5BA2004F741E /* PDVClassListViewController.m in Sources */,
 				D3A0A93C1ACB1DEF0033E195 /* PDVAppDependencies.m in Sources */,
 				D3A0A9441ACB29F70033E195 /* PDVAppListViewController.m in Sources */,
 				D3A0A9131ACB183C0033E195 /* main.m in Sources */,
