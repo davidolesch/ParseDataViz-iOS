@@ -1,8 +1,8 @@
 #import <UIKit/UIKit.h>
 #import "PDVAppListPresenter.h"
-#import "PDVListView.h"
+#import "PDVAppListView.h"
 
-@interface PDVAppListViewController : UITableViewController <PDVListView>
+@interface PDVAppListViewController : UITableViewController <PDVAppListView>
 
 @property (strong, nonatomic) PDVAppListPresenter *presenter;
 

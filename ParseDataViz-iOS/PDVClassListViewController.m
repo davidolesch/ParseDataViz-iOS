@@ -1,15 +1,15 @@
-#import "PDVAppListViewController.h"
+#import "PDVClassListViewController.h"
 
-@interface PDVAppListViewController ()
+@interface PDVClassListViewController ()
 
 @property (strong, nonatomic) NSArray *rows;
 
 @end
 
-@implementation PDVAppListViewController
+@implementation PDVClassListViewController
 
 - (void)viewDidLoad {
-    self.navigationItem.title = @"Apps";
+    self.navigationItem.title = @"Classes";
     [self.presenter updateView];
 }
 
@@ -37,8 +37,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *row = self.rows[indexPath.row];
-    [self.presenter selectAppNamed:row];
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.presenter selectClassNamed:row];
 }
 
 #pragma mark PDVListView
