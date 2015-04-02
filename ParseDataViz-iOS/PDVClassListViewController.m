@@ -10,6 +10,7 @@
 
 - (void)viewDidLoad {
     self.navigationItem.title = @"Classes";
+    self.accessibilityLabel = self.navigationItem.title;
     [self.presenter updateView];
 }
 

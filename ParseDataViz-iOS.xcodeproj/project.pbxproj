@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9462A16BCD67119389AC54F2 /* libPods-ParseDataViz-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DAC6218FFF43B6CBD4A068 /* libPods-ParseDataViz-iOSTests.a */; };
 		D34C275C1ACC4AB8004F741E /* PDVAppListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C275B1ACC4AB8004F741E /* PDVAppListPresenter.m */; };
 		D34C27601ACC5315004F741E /* PDVAppListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C275F1ACC5315004F741E /* PDVAppListInteractor.m */; };
 		D34C276A1ACC5BA2004F741E /* PDVClassListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C27651ACC5BA2004F741E /* PDVClassListInteractor.m */; };
 		D34C276B1ACC5BA2004F741E /* PDVClassListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C27671ACC5BA2004F741E /* PDVClassListPresenter.m */; };
 		D34C276C1ACC5BA2004F741E /* PDVClassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C27691ACC5BA2004F741E /* PDVClassListViewController.m */; };
 		D34C27701ACC6E0F004F741E /* PDVDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C276F1ACC6E0E004F741E /* PDVDataManager.m */; };
+		D34C27721ACCAFE8004F741E /* AppSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C27711ACCAFE8004F741E /* AppSpec.m */; };
 		D3A0A9131ACB183C0033E195 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A0A9121ACB183C0033E195 /* main.m */; };
 		D3A0A9161ACB183C0033E195 /* PDVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A0A9151ACB183C0033E195 /* PDVAppDelegate.m */; };
 		D3A0A91C1ACB183C0033E195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A0A91A1ACB183C0033E195 /* Main.storyboard */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08B504CC5D6BBD14EFBA927D /* Pods-ParseDataViz-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseDataViz-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseDataViz-iOSTests/Pods-ParseDataViz-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53DAC6218FFF43B6CBD4A068 /* libPods-ParseDataViz-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParseDataViz-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A49C878A483EE121A0587E51 /* Pods-ParseDataViz-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseDataViz-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseDataViz-iOSTests/Pods-ParseDataViz-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		D34C275A1ACC4AB8004F741E /* PDVAppListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVAppListPresenter.h; sourceTree = "<group>"; };
 		D34C275B1ACC4AB8004F741E /* PDVAppListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVAppListPresenter.m; sourceTree = "<group>"; };
 		D34C275D1ACC4BD8004F741E /* PDVAppListInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDVAppListInteractorIO.h; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		D34C27691ACC5BA2004F741E /* PDVClassListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVClassListViewController.m; sourceTree = "<group>"; };
 		D34C276E1ACC6E0E004F741E /* PDVDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVDataManager.h; sourceTree = "<group>"; };
 		D34C276F1ACC6E0E004F741E /* PDVDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVDataManager.m; sourceTree = "<group>"; };
+		D34C27711ACCAFE8004F741E /* AppSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSpec.m; sourceTree = "<group>"; };
 		D3A0A90D1ACB183C0033E195 /* ParseDataViz-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParseDataViz-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A0A9111ACB183C0033E195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3A0A9121ACB183C0033E195 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,12 +86,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9462A16BCD67119389AC54F2 /* libPods-ParseDataViz-iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C29BB77FF03354FB71ED7E70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08B504CC5D6BBD14EFBA927D /* Pods-ParseDataViz-iOSTests.debug.xcconfig */,
+				A49C878A483EE121A0587E51 /* Pods-ParseDataViz-iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF5551924B3B1FB38526ACB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53DAC6218FFF43B6CBD4A068 /* libPods-ParseDataViz-iOSTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D34C27611ACC5A6F004F741E /* ClassList */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +139,8 @@
 				D3A0A90F1ACB183C0033E195 /* ParseDataViz-iOS */,
 				D3A0A9291ACB183C0033E195 /* ParseDataViz-iOSTests */,
 				D3A0A90E1ACB183C0033E195 /* Products */,
+				C29BB77FF03354FB71ED7E70 /* Pods */,
+				CF5551924B3B1FB38526ACB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				D3A0A92A1ACB183C0033E195 /* Supporting Files */,
+				D34C27711ACCAFE8004F741E /* AppSpec.m */,
 			);
 			path = "ParseDataViz-iOSTests";
 			sourceTree = "<group>";
@@ -252,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3A0A9331ACB183C0033E195 /* Build configuration list for PBXNativeTarget "ParseDataViz-iOSTests" */;
 			buildPhases = (
+				E298508A05EB27F9BE702232 /* Check Pods Manifest.lock */,
 				D3A0A9221ACB183C0033E195 /* Sources */,
 				D3A0A9231ACB183C0033E195 /* Frameworks */,
 				D3A0A9241ACB183C0033E195 /* Resources */,
+				CAED987DC7C7833632C12E82 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,6 +352,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CAED987DC7C7833632C12E82 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseDataViz-iOSTests/Pods-ParseDataViz-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E298508A05EB27F9BE702232 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3A0A9091ACB183C0033E195 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -346,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34C27721ACCAFE8004F741E /* AppSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +542,7 @@
 		};
 		D3A0A9341ACB183C0033E195 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B504CC5D6BBD14EFBA927D /* Pods-ParseDataViz-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -498,6 +562,7 @@
 		};
 		D3A0A9351ACB183C0033E195 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A49C878A483EE121A0587E51 /* Pods-ParseDataViz-iOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

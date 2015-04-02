@@ -78,6 +78,7 @@
     UIViewController *detailViewController = [[UIViewController alloc] init];
     [detailViewController.view setBackgroundColor:[UIColor whiteColor]];
     detailViewController.navigationItem.title = className;
+    detailViewController.accessibilityLabel = className;
     
     UINavigationController *navigationController = [self navigationControllerFromWindow:self.window];
     [navigationController pushViewController:detailViewController animated:YES];

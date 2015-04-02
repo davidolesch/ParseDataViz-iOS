@@ -22,6 +22,8 @@
     }
     NSString *row = self.rows[indexPath.row];
     cell.textLabel.text = row;
+    cell.accessibilityLabel = row;
+    
     return cell;
 }
 
@@ -46,6 +48,10 @@
 - (void)reloadListWithRows:(NSArray *)rows {
     self.rows = rows;
     [self.tableView reloadData];
+}
+
+- (void)showNoClassesFoundAlertForAppNamed:(NSString *)appName {
+    [[[UIAlertView alloc] initWithTitle:@"No classes found" message:[NSString stringWithFormat:@"%@ doesn't have any classes associated with it",appName] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
 }
 
 @end

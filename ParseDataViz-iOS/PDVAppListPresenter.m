@@ -22,7 +22,7 @@
         [self.appWireframe presentDetailViewForClass:classes.firstObject];
     }
     else {
-        [[[UIAlertView alloc] initWithTitle:@"No classes found" message:[NSString stringWithFormat:@"%@ doesn't have any classes associated with it",appName] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+        [self.view showNoClassesFoundAlertForAppNamed:appName];
     }
 }
 
