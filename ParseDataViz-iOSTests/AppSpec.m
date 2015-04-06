@@ -1,9 +1,19 @@
 #import <Specta.h>
 #import <KIF.h>
 
+#import "PDVAppDelegate+Testing.h"
+#import "PDVAppWireframe+Testing.h"
+
 SpecBegin(App)
 
 describe(@"App/Class list navigation", ^{
+    beforeAll(^{
+        PDVAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+        appDelegate.appWireframe.dataManager.dataDictionary = @{ @"0 classes": @[],
+                                                                 @"1 class": @[@"1st class"],
+                                                                 @"2 classes": @[@"1st class", @"2nd class"]};
+        [appDelegate.appWireframe.appListViewController.presenter.interactor requestAppsList];
+    });
     it(@"should show alert view when the selected app has zero classes", ^{
         [tester tapViewWithAccessibilityLabel:@"0 classes"];
         [tester waitForViewWithAccessibilityLabel:@"No classes found"];

@@ -2,10 +2,18 @@
 
 @implementation PDVDataManager
 
-+ (NSDictionary *)dataStore {
-    return @{ @"0 classes": @[],
-              @"1 class": @[@"1st class"],
-              @"2 classes": @[@"1st class", @"2nd class"]};
+- (instancetype)init {
+    return [self initWithDictionary:@{ @"Book Scan": @[],
+                                      @"Free2go": @[@"Reservation"],
+                                      @"Wine Quiz": @[@"Activity", @"Quiz"] }];
+}
+
+- (instancetype)initWithDictionary:(NSDictionary *)dataDictionary {
+    if ((self = [super init])) {
+        _dataDictionary = dataDictionary;
+    }
+    
+    return self;
 }
 
 @end

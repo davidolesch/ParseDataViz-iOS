@@ -39,6 +39,8 @@
 		08B504CC5D6BBD14EFBA927D /* Pods-ParseDataViz-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseDataViz-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseDataViz-iOSTests/Pods-ParseDataViz-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53DAC6218FFF43B6CBD4A068 /* libPods-ParseDataViz-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParseDataViz-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49C878A483EE121A0587E51 /* Pods-ParseDataViz-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseDataViz-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseDataViz-iOSTests/Pods-ParseDataViz-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D32A57AA1AD329E700F784C2 /* PDVAppDelegate+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDVAppDelegate+Testing.h"; sourceTree = "<group>"; };
+		D32A57AB1AD32A8700F784C2 /* PDVAppWireframe+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDVAppWireframe+Testing.h"; sourceTree = "<group>"; };
 		D34C275A1ACC4AB8004F741E /* PDVAppListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVAppListPresenter.h; sourceTree = "<group>"; };
 		D34C275B1ACC4AB8004F741E /* PDVAppListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVAppListPresenter.m; sourceTree = "<group>"; };
 		D34C275D1ACC4BD8004F741E /* PDVAppListInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDVAppListInteractorIO.h; sourceTree = "<group>"; };
@@ -177,6 +179,8 @@
 			children = (
 				D3A0A92A1ACB183C0033E195 /* Supporting Files */,
 				D34C27711ACCAFE8004F741E /* AppSpec.m */,
+				D32A57AA1AD329E700F784C2 /* PDVAppDelegate+Testing.h */,
+				D32A57AB1AD32A8700F784C2 /* PDVAppWireframe+Testing.h */,
 			);
 			path = "ParseDataViz-iOSTests";
 			sourceTree = "<group>";

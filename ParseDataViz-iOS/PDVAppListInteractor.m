@@ -1,15 +1,28 @@
 #import "PDVAppListInteractor.h"
 #import "PDVDataManager.h"
 
+@interface PDVAppListInteractor ()
+
+@property (strong, nonatomic) PDVDataManager *dataManager;
+
+@end
+
 @implementation PDVAppListInteractor
 
+- (instancetype)initWithDataManager:(PDVDataManager *)dataManager {
+    if ((self = [super init])) {
+        _dataManager = dataManager;
+    }
+    return self;
+}
+
 - (void)requestAppsList {
-    NSArray *appNames = [[PDVDataManager dataStore] allKeys];
+    NSArray *appNames = [self.dataManager.dataDictionary allKeys];
     [self.presenter updateAppsList:appNames];
 }
 
 - (void)requestClassesForAppNamed:(NSString *)appName {
-    NSArray *classNames = [PDVDataManager dataStore][appName];
+    NSArray *classNames = self.dataManager.dataDictionary[appName];
     
     [self.presenter updateClasses:classNames forAppNamed:appName];
 }

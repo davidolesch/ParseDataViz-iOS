@@ -5,11 +5,13 @@
 #import "PDVClassListViewController.h"
 #import "PDVClassListPresenter.h"
 #import "PDVClassListInteractor.h"
+#import "PDVDataManager.h"
 
 @interface PDVAppWireframe ()
 
 @property (strong, nonatomic) PDVAppListViewController *appListViewController;
 @property (weak, nonatomic) UIWindow *window;
+@property (strong, nonatomic) PDVDataManager *dataManager;
 
 @end
 
@@ -19,9 +21,10 @@
     if ((self = [super init]))
     {
         PDVAppListViewController *appListViewController = [[PDVAppListViewController alloc] init];
+        _dataManager = [[PDVDataManager alloc] init];
         
         PDVAppListPresenter *presenter = [[PDVAppListPresenter alloc] init];
-        PDVAppListInteractor *interactor = [[PDVAppListInteractor alloc] init];
+        PDVAppListInteractor *interactor = [[PDVAppListInteractor alloc] initWithDataManager:_dataManager];
         
         // Strong references.
         appListViewController.presenter = presenter;
@@ -59,7 +62,7 @@
     PDVClassListViewController *classListViewController = [[PDVClassListViewController alloc] init];
     
     PDVClassListPresenter *presenter = [[PDVClassListPresenter alloc] initWithAppName:appName];
-    PDVClassListInteractor *interactor = [[PDVClassListInteractor alloc] init];
+    PDVClassListInteractor *interactor = [[PDVClassListInteractor alloc] initWithDataManager:self.dataManager];
     
     // Strong references.
     classListViewController.presenter = presenter;

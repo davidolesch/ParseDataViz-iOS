@@ -2,6 +2,8 @@
 
 @interface PDVDataManager : NSObject
 
-+ (NSDictionary *)dataStore;
+@property (strong, nonatomic) NSDictionary *dataDictionary;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dataDictionary;
 
 @end
