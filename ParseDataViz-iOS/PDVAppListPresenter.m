@@ -19,7 +19,7 @@
         [self.appWireframe presentClassListForAppNamed:appName];
     }
     else if (classes.count == 1) {
-        [self.appWireframe presentDetailViewForClass:classes.firstObject];
+        [self.appWireframe presentDetailViewForAppNamed:appName andClassNamed:classes.firstObject];
     }
     else {
         [self.view showNoClassesFoundAlertForAppNamed:appName];

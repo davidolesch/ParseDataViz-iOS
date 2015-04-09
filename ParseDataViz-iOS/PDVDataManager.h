@@ -2,8 +2,13 @@
 
 @interface PDVDataManager : NSObject
 
-@property (strong, nonatomic) NSDictionary *dataDictionary;
+- (instancetype)initWithApps:(NSArray *)apps;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dataDictionary;
+- (NSArray *)allAppNames;
+- (NSArray *)allClassNamesForAppName:(NSString *)appName;
+- (NSString *)appIDForAppName:(NSString *)appName;
+- (NSString *)RESTKeyForAppName:(NSString *)appName;
+
+- (void)fetchColumnsForAppName:(NSString *)appName andClassName:(NSString *)className withCompletion:(void (^)(NSArray *columns))completionBlock;
 
 @end

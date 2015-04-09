@@ -29,7 +29,7 @@
 }
 
 - (void)selectClassNamed:(NSString *)className {
-    [self.appWireframe presentDetailViewForClass:className];
+    [self.appWireframe presentDetailViewForAppNamed:self.appName andClassNamed:className];
 }
 
 @end

@@ -6,6 +6,11 @@
 #import "PDVClassListPresenter.h"
 #import "PDVClassListInteractor.h"
 #import "PDVDataManager.h"
+#import "PDVClassDetailViewController.h"
+#import "PDVClassDetailPresenter.h"
+#import "PDVClassDetailInteractor.h"
+
+#define kClassDetailViewControllerStoryboardID @"ClassDetailViewController"
 
 @interface PDVAppWireframe ()
 
@@ -77,11 +82,19 @@
     [navigationController pushViewController:classListViewController animated:YES];
 }
 
-- (void)presentDetailViewForClass:(NSString *)className {
-    UIViewController *detailViewController = [[UIViewController alloc] init];
-    [detailViewController.view setBackgroundColor:[UIColor whiteColor]];
-    detailViewController.navigationItem.title = className;
-    detailViewController.accessibilityLabel = className;
+- (void)presentDetailViewForAppNamed:(NSString *)appName andClassNamed:(NSString *)className {
+    PDVClassDetailViewController *detailViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:kClassDetailViewControllerStoryboardID];
+    
+    PDVClassDetailPresenter *presenter = [[PDVClassDetailPresenter alloc] initWithAppName:appName andClassName:className];
+    PDVClassDetailInteractor *interactor = [[PDVClassDetailInteractor alloc] initWithDataManager:self.dataManager];
+    
+    // Strong references.
+    detailViewController.presenter = presenter;
+    presenter.interactor = interactor;
+    
+    // Weak references.
+    interactor.presenter = presenter;
+    presenter.view = detailViewController;
     
     UINavigationController *navigationController = [self navigationControllerFromWindow:self.window];
     [navigationController pushViewController:detailViewController animated:YES];

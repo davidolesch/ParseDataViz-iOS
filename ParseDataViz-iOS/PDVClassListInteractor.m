@@ -17,8 +17,7 @@
 }
 
 - (void)requestClassesListForAppNamed:(NSString *)appName {
-    NSArray *classNames = self.dataManager.dataDictionary[appName];
-    [self.presenter updateClassesList:classNames];
+    [self.presenter updateClassesList:[self.dataManager allClassNamesForAppName:appName]];
 }
 
 @end

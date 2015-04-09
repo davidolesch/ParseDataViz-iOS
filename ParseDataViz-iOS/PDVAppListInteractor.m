@@ -17,14 +17,11 @@
 }
 
 - (void)requestAppsList {
-    NSArray *appNames = [self.dataManager.dataDictionary allKeys];
-    [self.presenter updateAppsList:appNames];
+    [self.presenter updateAppsList:[self.dataManager allAppNames]];
 }
 
 - (void)requestClassesForAppNamed:(NSString *)appName {
-    NSArray *classNames = self.dataManager.dataDictionary[appName];
-    
-    [self.presenter updateClasses:classNames forAppNamed:appName];
+    [self.presenter updateClasses:[self.dataManager allClassNamesForAppName:appName] forAppNamed:appName];
 }
 
 @end

@@ -9,6 +9,8 @@
 @implementation PDVAppListViewController
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
+    
     self.navigationItem.title = @"Apps";
     [self.presenter updateView];
 }
