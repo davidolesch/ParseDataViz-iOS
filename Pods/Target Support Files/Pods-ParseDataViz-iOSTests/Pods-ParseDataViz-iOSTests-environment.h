@@ -9,7 +9,7 @@
 // Specta
 #define COCOAPODS_POD_AVAILABLE_Specta
 #define COCOAPODS_VERSION_MAJOR_Specta 0
-#define COCOAPODS_VERSION_MINOR_Specta 4
+#define COCOAPODS_VERSION_MINOR_Specta 5
 #define COCOAPODS_VERSION_PATCH_Specta 0
 
 // Debug build configuration

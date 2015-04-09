@@ -1,6 +1,6 @@
 
 target 'ParseDataViz-iOS' do
-
+    pod "AFNetworking", "~> 2.0"
 end
 
 target 'ParseDataViz-iOSTests', :exclusive => true do
