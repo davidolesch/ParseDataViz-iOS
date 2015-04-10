@@ -9,6 +9,6 @@
 - (NSString *)appIDForAppName:(NSString *)appName;
 - (NSString *)RESTKeyForAppName:(NSString *)appName;
 
-- (void)fetchColumnsForAppName:(NSString *)appName andClassName:(NSString *)className withCompletion:(void (^)(NSArray *columns))completionBlock;
+- (void)findColumnsForAppName:(NSString *)appName andClassName:(NSString *)className withSuccess:(void (^)(NSArray *columns))successBlock andFailure:(void (^)(NSString *errorMessage))failureBlock;
 
 @end

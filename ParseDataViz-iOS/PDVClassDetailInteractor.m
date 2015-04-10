@@ -16,8 +16,10 @@
 }
 
 - (void)requestClassColumnReportForAppName:(NSString *)appName andClassName:(NSString *)className {
-    [self.dataManager fetchColumnsForAppName:appName andClassName:className withCompletion:^(NSArray *columns) {
+    [self.dataManager findColumnsForAppName:appName andClassName:className withSuccess:^(NSArray *columns) {
         [self.presenter updateClassColumnReport:columns];
+    } andFailure:^(NSString *errorMessage) {
+        [self.presenter updateClassColumnReportErrorMessage:errorMessage];
     }];
 }
 

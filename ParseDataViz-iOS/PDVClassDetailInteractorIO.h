@@ -17,4 +17,10 @@
  *  @param classColumns The columns and associated data.
  */
 - (void)updateClassColumnReport:(NSArray *)classColumns;
+/**
+ *  Receive the error message if the Interactor isn't able to find the requested reports.
+ *  
+ *  @param errorMessage The error message to show.
+ */
+- (void)updateClassColumnReportErrorMessage:(NSString *)errorMessage;
 @end

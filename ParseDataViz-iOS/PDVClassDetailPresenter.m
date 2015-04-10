@@ -23,12 +23,17 @@
 }
 
 - (void)updateView {
+    [self.view displayLoadingClassColumnReports];
     [self.interactor requestClassColumnReportForAppName:self.appName andClassName:self.className];
     [self.view displayClassName:self.className];
 }
 
 - (void)updateClassColumnReport:(NSArray *)classColumns {
     [self.view displayClassColumnReports:classColumns];
+}
+
+- (void)updateClassColumnReportErrorMessage:(NSString *)errorMessage {
+    [self.view displayErrorMessage:errorMessage];
 }
 
 @end
