@@ -1,5 +1,6 @@
 #import <Specta.h>
 #import <KIF.h>
+#import <OHHTTPStubs.h>
 
 #import "PDVAppDelegate+Testing.h"
 #import "PDVAppWireframe+Testing.h"
@@ -12,6 +13,13 @@ describe(@"App/Class list navigation", ^{
         PDVAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
         appDelegate.appWireframe.dataManager.apps = @[@{@"appName": @"0 classes", @"appID":@"appID", @"RESTKey":@"RESTKey", @"classes":@[]},@{@"appName": @"1 class", @"appID":@"appID", @"RESTKey":@"RESTKey", @"classes":@[@"1st class"]},@{@"appName": @"2 classes", @"appID":@"appID", @"RESTKey":@"RESTKey", @"classes":@[@"1st class", @"2nd class"]}];
         [appDelegate.appWireframe.appListViewController.presenter.interactor requestAppsList];
+        
+        [OHHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest *request) {
+            return [request.URL.path isEqualToString:@"/1/functions/topDistinctValues"];
+        } withStubResponse:^OHHTTPStubsResponse *(NSURLRequest *request) {
+            NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+            return [OHHTTPStubsResponse responseWithFileAtPath:[bundle pathForResource:@"topDistinctValues" ofType:@"json"] statusCode:200 headers:@{@"Content-Type": @"application/json"}];
+        }];
     });
     it(@"should show alert view when the selected app has zero classes", ^{
         [tester tapViewWithAccessibilityLabel:@"0 classes"];
