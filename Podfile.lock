@@ -20,19 +20,30 @@ PODS:
   - AFNetworking/UIKit (2.5.2):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Expecta (0.4.0)
   - KIF (3.2.1):
     - KIF/XCTest (= 3.2.1)
   - KIF/XCTest (3.2.1)
+  - OCMock (3.1.2)
+  - OHHTTPStubs (3.1.11):
+    - OHHTTPStubs/Core (= 3.1.11)
+  - OHHTTPStubs/Core (3.1.11)
   - Specta (0.5.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - Expecta (~> 0.4)
   - KIF (~> 3.0)
+  - OCMock (~> 3.1)
+  - OHHTTPStubs (~> 3.1)
   - Specta (~> 0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
+  Expecta: 392a6b5bfb9f4097e47dd8064d9b732079490332
   KIF: ef1691e54e1d969c3b4fd0b5b56a3d7ddf37f216
+  OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
+  OHHTTPStubs: 5624a5d20d97d46d47e15a68ca8808b59ccf0512
   Specta: eb90708ed77569bbda089f8ead10bb99b8e9489e
 
 COCOAPODS: 0.35.0
