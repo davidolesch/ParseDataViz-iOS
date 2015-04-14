@@ -29,6 +29,7 @@ PODS:
     - OHHTTPStubs/Core (= 3.1.11)
   - OHHTTPStubs/Core (3.1.11)
   - Specta (0.5.0)
+  - TLIndexPathTools (0.3.10)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
@@ -37,6 +38,7 @@ DEPENDENCIES:
   - OCMock (~> 3.1)
   - OHHTTPStubs (~> 3.1)
   - Specta (~> 0.4)
+  - TLIndexPathTools (~> 0.3)
 
 SPEC CHECKSUMS:
   AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
@@ -45,5 +47,6 @@ SPEC CHECKSUMS:
   OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
   OHHTTPStubs: 5624a5d20d97d46d47e15a68ca8808b59ccf0512
   Specta: eb90708ed77569bbda089f8ead10bb99b8e9489e
+  TLIndexPathTools: 20052553989ab8a83719e66b5d6d382f5e0f577b
 
 COCOAPODS: 0.35.0

@@ -1,6 +1,7 @@
 
 target 'ParseDataViz-iOS' do
-    pod "AFNetworking", "~> 2.0"
+    pod 'AFNetworking', '~> 2.0'
+    pod 'TLIndexPathTools', '~> 0.3'
 end
 
 target 'ParseDataViz-iOSTests', :exclusive => true do
