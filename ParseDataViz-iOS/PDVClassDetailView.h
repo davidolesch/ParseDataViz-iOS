@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import <TLIndexPathDataModel.h>
 
 @protocol PDVClassDetailView <NSObject>
 /**
@@ -16,7 +17,7 @@
  *
  *  @param classColumnReports The columns and associated data.
  */
-- (void)displayClassColumnReports:(NSArray *)classColumnReports;
+- (void)displayClassColumnReports:(TLIndexPathDataModel *)classColumnReports;
 /**
  *  Display the name of the class.
  *

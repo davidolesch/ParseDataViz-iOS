@@ -1,4 +1,5 @@
 #import "PDVClassDetailPresenter.h"
+#import <TLIndexPathDataModel.h>
 
 @interface PDVClassDetailPresenter ()
 
@@ -29,7 +30,8 @@
 }
 
 - (void)updateClassColumnReport:(NSArray *)classColumns {
-    [self.view displayClassColumnReports:classColumns];
+    TLIndexPathDataModel *classColumnReports = [[TLIndexPathDataModel alloc] initWithItems:classColumns];
+    [self.view displayClassColumnReports:classColumnReports];
 }
 
 - (void)updateClassColumnReportErrorMessage:(NSString *)errorMessage {
