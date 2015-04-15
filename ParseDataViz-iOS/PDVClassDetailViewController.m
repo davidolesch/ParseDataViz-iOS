@@ -27,7 +27,7 @@
 }
 
 - (void)displayClassColumnReports:(TLIndexPathDataModel *)classColumnReports {
-    [self.textView setText:[NSString stringWithFormat:@"Showing reports for %@",self.className]];
+    [self.textView setText:@""];
     [self.columnReportsCollectionViewController displayColumnsReportsForClassName:self.className andColumnReports:classColumnReports];
 }
 
