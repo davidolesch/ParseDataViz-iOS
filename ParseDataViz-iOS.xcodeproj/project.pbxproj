@@ -10,6 +10,7 @@
 		9462A16BCD67119389AC54F2 /* libPods-ParseDataViz-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DAC6218FFF43B6CBD4A068 /* libPods-ParseDataViz-iOSTests.a */; };
 		D33754A91ADC22DB00729FA2 /* topDistinctValues.json in Resources */ = {isa = PBXBuildFile; fileRef = D33754A81ADC22DB00729FA2 /* topDistinctValues.json */; };
 		D33754AB1ADC23A100729FA2 /* PDVClassDetailInteractorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D33754AA1ADC23A100729FA2 /* PDVClassDetailInteractorSpec.m */; };
+		D33F85251AE02C34006AE304 /* PDVClassDetailViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D33F85241AE02C34006AE304 /* PDVClassDetailViewControllerSpec.m */; };
 		D34A73411ADD93D500D0CBCC /* PDVColumnDataBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34A73401ADD93D500D0CBCC /* PDVColumnDataBarChartViewController.m */; };
 		D34A73441ADDA31D00D0CBCC /* PDVColumnReportsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34A73431ADDA31D00D0CBCC /* PDVColumnReportsCollectionViewController.m */; };
 		D34C275C1ACC4AB8004F741E /* PDVAppListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C275B1ACC4AB8004F741E /* PDVAppListPresenter.m */; };
@@ -54,6 +55,7 @@
 		D32A57AB1AD32A8700F784C2 /* PDVAppWireframe+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDVAppWireframe+Testing.h"; sourceTree = "<group>"; };
 		D33754A81ADC22DB00729FA2 /* topDistinctValues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topDistinctValues.json; sourceTree = "<group>"; };
 		D33754AA1ADC23A100729FA2 /* PDVClassDetailInteractorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVClassDetailInteractorSpec.m; sourceTree = "<group>"; };
+		D33F85241AE02C34006AE304 /* PDVClassDetailViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVClassDetailViewControllerSpec.m; sourceTree = "<group>"; };
 		D34A733F1ADD93D500D0CBCC /* PDVColumnDataBarChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVColumnDataBarChartViewController.h; sourceTree = "<group>"; };
 		D34A73401ADD93D500D0CBCC /* PDVColumnDataBarChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDVColumnDataBarChartViewController.m; sourceTree = "<group>"; };
 		D34A73421ADDA31D00D0CBCC /* PDVColumnReportsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDVColumnReportsCollectionViewController.h; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				D3A0A92A1ACB183C0033E195 /* Supporting Files */,
 				D34C27711ACCAFE8004F741E /* AppSpec.m */,
 				D33754AA1ADC23A100729FA2 /* PDVClassDetailInteractorSpec.m */,
+				D33F85241AE02C34006AE304 /* PDVClassDetailViewControllerSpec.m */,
 				D32A57AA1AD329E700F784C2 /* PDVAppDelegate+Testing.h */,
 				D32A57AB1AD32A8700F784C2 /* PDVAppWireframe+Testing.h */,
 				D3B8A5621AD5F37000042691 /* PDVDataManager+Testing.h */,
@@ -517,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D33F85251AE02C34006AE304 /* PDVClassDetailViewControllerSpec.m in Sources */,
 				D33754AB1ADC23A100729FA2 /* PDVClassDetailInteractorSpec.m in Sources */,
 				D34C27721ACCAFE8004F741E /* AppSpec.m in Sources */,
 			);
