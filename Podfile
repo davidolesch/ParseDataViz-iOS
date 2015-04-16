@@ -11,5 +11,6 @@ target 'ParseDataViz-iOSTests', :exclusive => true do
   pod 'OCMock', '~> 3.1'
   pod 'OHHTTPStubs', '~> 3.1'
   pod 'KIF', '~> 3.0', :configurations => ['Debug']
+  pod 'Expecta+Snapshots', '~> 1.0'
 end
 
