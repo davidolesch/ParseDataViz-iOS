@@ -1,8 +1,11 @@
 #import "PDVClassDetailViewController.h"
+#import "PDVColumnReportsCollectionViewController.h"
+#import <SVProgressHUD.h>
 
 @interface PDVClassDetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) PDVColumnReportsCollectionViewController *columnReportsCollectionViewController;
+@property (strong, nonatomic) NSString *className;
 
 @end
 
@@ -15,20 +18,28 @@
 }
 
 - (void)displayLoadingClassColumnReports {
-    [self.textView setText:@"Loading.."];
+    [SVProgressHUD showWithStatus:@"Loading"];
 }
 
 - (void)displayErrorMessage:(NSString *)errorMessage {
-    [self.textView setText:errorMessage];
+    [SVProgressHUD showErrorWithStatus:errorMessage];
 }
 
-- (void)displayClassColumnReports:(NSArray *)classColumnReports {
-    [self.textView setText:[NSString stringWithFormat:@"%@",classColumnReports]];
+- (void)displayClassColumnReports:(TLIndexPathDataModel *)classColumnReports {
+    [SVProgressHUD dismiss];
+    [self.columnReportsCollectionViewController displayColumnsReportsForClassName:self.className andColumnReports:classColumnReports];
 }
 
 - (void)displayClassName:(NSString *)className {
+    self.className = className;
     self.navigationItem.title = className;
     self.accessibilityLabel = className;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:kEmbedColumnReportsCollectionViewControllerSegueIdentifier]) {
+        self.columnReportsCollectionViewController = segue.destinationViewController;
+    }
 }
 
 @end

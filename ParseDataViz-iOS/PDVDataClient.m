@@ -15,7 +15,8 @@
     
     [manager POST:@"https://api.parse.com/1/functions/topDistinctValues" parameters:requestParameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (successBlock) {
-            successBlock(responseObject);
+            NSArray *columns = responseObject[@"result"];
+            successBlock(columns);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (failureBlock) {

@@ -10,8 +10,6 @@
 #import "PDVClassDetailPresenter.h"
 #import "PDVClassDetailInteractor.h"
 
-#define kClassDetailViewControllerStoryboardID @"ClassDetailViewController"
-
 @interface PDVAppWireframe ()
 
 @property (strong, nonatomic) PDVAppListViewController *appListViewController;
