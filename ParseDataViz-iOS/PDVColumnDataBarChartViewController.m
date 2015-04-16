@@ -25,7 +25,7 @@
         [self.distinctCountLabel setText:[NSString stringWithFormat:@"%@ distinct %@",distinctValueCount,columnName]];
         [self.yTitleLabel setText:[NSString stringWithFormat:@"# of %@(s)",className]];
         
-        UIView *barView = [self viewWithBarsForDistinctCounts:columnData[@"distinctValues"] andFrame:CGRectMake(10.f, 80.f, 290.f, 250.f)];
+        UIView *barView = [self viewWithBarsForDistinctCounts:columnData[@"distinctValues"] andFrame:CGRectMake(10.f, 70.f, 290.f, 250.f)];
         [self.view addSubview:barView];
     }
 }

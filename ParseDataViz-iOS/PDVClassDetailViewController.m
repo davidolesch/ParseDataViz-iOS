@@ -1,9 +1,8 @@
 #import "PDVClassDetailViewController.h"
 #import "PDVColumnReportsCollectionViewController.h"
+#import <SVProgressHUD.h>
 
 @interface PDVClassDetailViewController ()
-
-@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @property (strong, nonatomic) PDVColumnReportsCollectionViewController *columnReportsCollectionViewController;
 @property (strong, nonatomic) NSString *className;
@@ -19,15 +18,15 @@
 }
 
 - (void)displayLoadingClassColumnReports {
-    [self.textView setText:@"Loading.."];
+    [SVProgressHUD showWithStatus:@"Loading"];
 }
 
 - (void)displayErrorMessage:(NSString *)errorMessage {
-    [self.textView setText:errorMessage];
+    [SVProgressHUD showErrorWithStatus:errorMessage];
 }
 
 - (void)displayClassColumnReports:(TLIndexPathDataModel *)classColumnReports {
-    [self.textView setText:@""];
+    [SVProgressHUD dismiss];
     [self.columnReportsCollectionViewController displayColumnsReportsForClassName:self.className andColumnReports:classColumnReports];
 }
 
