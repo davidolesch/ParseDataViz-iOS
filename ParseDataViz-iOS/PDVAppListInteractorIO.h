@@ -23,8 +23,8 @@
 /**
  *  Receive the array of classes for an app from the Interactor.
  *
- *  @param classCount The number of classes belonging to the app.
- *  @param appName    The name of the app.
+ *  @param classes The classes belonging to the app.
+ *  @param appName The name of the app.
  */
 - (void)updateClasses:(NSArray *)classes forAppNamed:(NSString *)appName;
 @end
