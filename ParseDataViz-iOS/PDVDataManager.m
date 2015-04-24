@@ -1,6 +1,7 @@
 #import "PDVDataManager.h"
 #import "PDVDataClient.h"
 #import "PDVDataPersistence.h"
+#import "PDVApp.h"
 
 @interface PDVDataManager ()
 
@@ -23,37 +24,36 @@
     return self;
 }
 
-- (NSDictionary *)appDictionaryForAppName:(NSString *)appName {
-    NSPredicate *appNamePredicate = [NSPredicate predicateWithFormat:@"appName MATCHES[cd] %@",appName];
+- (PDVApp *)appForAppName:(NSString *)appName {
+    NSPredicate *appNamePredicate = [NSPredicate predicateWithFormat:@"name MATCHES[cd] %@",appName];
     return [self.apps filteredArrayUsingPredicate:appNamePredicate].firstObject;
 }
 
 - (NSArray *)allAppNames {
     NSMutableArray *appNames = [NSMutableArray array];
-    for (NSDictionary *app in self.apps) {
-        [appNames addObject:app[@"appName"]];
+    for (PDVApp *app in self.apps) {
+        [appNames addObject:app.name];
     }
     return [NSArray arrayWithArray:appNames];
 }
 
 - (NSArray *)allClassNamesForAppName:(NSString *)appName {
-    NSDictionary *app = [self appDictionaryForAppName:appName];
-    return [NSArray arrayWithArray:app[@"classes"]];
+    PDVApp *app = [self appForAppName:appName];
+    return app.classes;
 }
 
 - (NSString *)appIDForAppName:(NSString *)appName {
-    NSDictionary *app = [self appDictionaryForAppName:appName];
-    return app[@"appID"];
+    PDVApp *app = [self appForAppName:appName];
+    return app.appID;
 }
 
 - (NSString *)RESTKeyForAppName:(NSString *)appName {
-    NSDictionary *app = [self appDictionaryForAppName:appName];
-    return app[@"RESTKey"];
+    PDVApp *app = [self appForAppName:appName];
+    return app.RESTKey;
 }
 
-- (void)addAppNamed:(NSString *)appName {
-    __block NSDictionary *app = @{@"appName": appName, @"appID":@"appID", @"RESTKey":@"RESTKey", @"classes":@[@"class name"]};
-
+- (void)addAppNamed:(NSString *)appName withAppID:(NSString *)appID andRESTKey:(NSString *)RESTKey{
+    PDVApp *app = [[PDVApp alloc] initWithName:appName appId:appID RESTKey:RESTKey andClasses:@[@"Reservation"]];
     [[PDVDataPersistence sharedInstance] addApp:app];
 }
 

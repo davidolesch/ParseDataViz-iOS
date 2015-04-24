@@ -46,7 +46,7 @@
     [NSKeyedArchiver archiveRootObject:self.userApps toFile:[dataFileURL path]];
 }
 
-- (void)addApp:(NSDictionary *)app {
+- (void)addApp:(PDVApp *)app {
     [self.userApps addApp:app];
     [self save];
 }

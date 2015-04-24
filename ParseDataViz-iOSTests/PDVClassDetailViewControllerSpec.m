@@ -4,6 +4,7 @@
 #include <Expecta/Expecta.h>
 #include <Expecta+Snapshots/EXPMatchers+FBSnapshotTest.h>
 #import <OHHTTPStubs.h>
+#import "PDVApp.h"
 #import "PDVClassDetailViewController.h"
 
 SpecBegin(PDVClassDetailViewController)
@@ -20,7 +21,7 @@ describe(@"detail view controller", ^{
         }];
         
         detailViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:kClassDetailViewControllerStoryboardID];
-        NSArray *apps = @[@{@"appName": @"app name", @"appID":@"appID", @"RESTKey":@"RESTKey", @"classes":@[@"class name"]}];
+        NSArray *apps = @[[[PDVApp alloc] initWithName:@"app name" appId:@"appID" RESTKey:@"RESTKey" andClasses:@[]]];
         PDVDataManager *dataManager = [[PDVDataManager alloc] initWithApps:apps];
         
         PDVClassDetailPresenter *presenter = [[PDVClassDetailPresenter alloc] initWithAppName:@"app name" andClassName:@"class name"];

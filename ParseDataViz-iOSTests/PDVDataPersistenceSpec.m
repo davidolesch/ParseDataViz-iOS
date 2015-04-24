@@ -3,12 +3,14 @@
 #include <Specta/Specta.h>
 #include <Expecta/Expecta.h>
 #import "PDVDataPersistence.h"
+#import "PDVApp.h"
 
 SpecBegin(PDVDataPersistence)
 
 describe(@"data persistence", ^{
     __block PDVDataPersistence *dataPersistence;
-    __block NSDictionary *app = @{@"appName": @"app name", @"appID":@"appID", @"RESTKey":@"RESTKey", @"classes":@[@"class name"]};
+    __block PDVApp *app = [[PDVApp alloc] initWithName:@"app name" appId:@"appID" RESTKey:@"RESTKey" andClasses:@[@"class name"]];
+
     beforeEach(^{
          dataPersistence = [[PDVDataPersistence alloc] init];
         [dataPersistence clearUserApps];

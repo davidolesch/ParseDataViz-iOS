@@ -5,6 +5,7 @@
 #import <OCMock.h>
 #import <OHHTTPStubs.h>
 
+#import "PDVApp.h"
 #import "PDVClassDetailInteractor.h"
 #import "PDVClassDetailPresenter.h"
 
@@ -15,7 +16,7 @@ __block PDVClassDetailInteractor *interactor;
 
 describe(@"Interactor", ^{
     beforeEach(^{
-        NSArray *apps = @[@{@"appName": @"0 classes", @"appID":@"appID", @"RESTKey":@"RESTKey", @"classes":@[]},@{@"appName": @"1 class", @"appID":@"appID", @"RESTKey":@"RESTKey", @"classes":@[@"1st class"]},@{@"appName": @"2 classes", @"appID":@"appID", @"RESTKey":@"RESTKey", @"classes":@[@"1st class", @"2nd class"]}];
+        NSArray *apps = @[[[PDVApp alloc] initWithName:@"0 classes" appId:@"appID" RESTKey:@"RESTKey" andClasses:@[]], [[PDVApp alloc] initWithName:@"1 class" appId:@"appID" RESTKey:@"RESTKey" andClasses:@[@"1st class"]], [[PDVApp alloc] initWithName:@"2 classes" appId:@"appID" RESTKey:@"RESTKey" andClasses:@[@"1st class", @"2nd class"]]];
         PDVDataManager *dataManager = [[PDVDataManager alloc] initWithApps:apps];
         interactor = [[PDVClassDetailInteractor alloc] initWithDataManager:dataManager];
     });

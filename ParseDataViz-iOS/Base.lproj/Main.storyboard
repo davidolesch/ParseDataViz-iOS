@@ -173,44 +173,110 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IgO-eu-UIz">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1G-oF-EC5">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REST Key" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbY-ck-ci9">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSQ-Ns-LWh">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UAn-sB-bR6" firstAttribute="top" secondItem="bKp-Lr-nqP" secondAttribute="bottom" constant="12" id="4MC-BO-scp"/>
+                            <constraint firstItem="IgO-eu-UIz" firstAttribute="leading" secondItem="p1G-oF-EC5" secondAttribute="trailing" constant="78" id="4dn-mS-mE7">
+                                <variation key="heightClass=regular-widthClass=compact" constant="107"/>
+                            </constraint>
+                            <constraint firstItem="sSQ-Ns-LWh" firstAttribute="top" secondItem="IgO-eu-UIz" secondAttribute="bottom" constant="8" symbolic="YES" id="7SD-s9-d2l"/>
+                            <constraint firstItem="IgO-eu-UIz" firstAttribute="top" secondItem="p1G-oF-EC5" secondAttribute="top" id="MbO-60-qHs"/>
+                            <constraint firstItem="p1G-oF-EC5" firstAttribute="leading" secondItem="UAn-sB-bR6" secondAttribute="leading" id="Oz5-kf-EaD"/>
+                            <constraint firstItem="IgO-eu-UIz" firstAttribute="trailing" secondItem="sSQ-Ns-LWh" secondAttribute="trailing" id="Upx-6i-iK0">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-4"/>
+                            </constraint>
+                            <constraint firstItem="qbY-ck-ci9" firstAttribute="leading" secondItem="p1G-oF-EC5" secondAttribute="leading" id="Y7T-xf-GMN"/>
+                            <constraint firstItem="IgO-eu-UIz" firstAttribute="top" secondItem="aTb-H4-3b8" secondAttribute="bottom" constant="8" symbolic="YES" id="cXc-hU-imv"/>
                             <constraint firstItem="aTb-H4-3b8" firstAttribute="trailing" secondItem="O1F-cE-f91" secondAttribute="trailingMargin" id="dkL-Wv-rhq"/>
                             <constraint firstItem="UAn-sB-bR6" firstAttribute="leading" secondItem="O1F-cE-f91" secondAttribute="leadingMargin" id="ii4-y7-WBD"/>
-                            <constraint firstItem="aTb-H4-3b8" firstAttribute="top" secondItem="bKp-Lr-nqP" secondAttribute="bottom" constant="8" symbolic="YES" id="plK-f1-1WJ"/>
+                            <constraint firstItem="UAn-sB-bR6" firstAttribute="top" secondItem="bKp-Lr-nqP" secondAttribute="bottom" constant="12" id="k1W-kC-5gr">
+                                <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="IgO-eu-UIz" firstAttribute="trailing" secondItem="aTb-H4-3b8" secondAttribute="trailing" id="lkx-78-PPz"/>
+                            <constraint firstItem="sSQ-Ns-LWh" firstAttribute="top" secondItem="qbY-ck-ci9" secondAttribute="top" id="oaC-v3-sgf"/>
                             <constraint firstItem="aTb-H4-3b8" firstAttribute="leading" secondItem="UAn-sB-bR6" secondAttribute="trailing" constant="78" id="qDh-fA-i9u"/>
+                            <constraint firstItem="sSQ-Ns-LWh" firstAttribute="leading" secondItem="qbY-ck-ci9" secondAttribute="trailing" constant="78" id="r57-Zp-4S9">
+                                <variation key="heightClass=regular-widthClass=compact" constant="82"/>
+                            </constraint>
+                            <constraint firstItem="aTb-H4-3b8" firstAttribute="top" secondItem="bKp-Lr-nqP" secondAttribute="bottom" constant="8" symbolic="YES" id="tLx-ga-Ap3"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="UAn-sB-bR6"/>
                                 <exclude reference="aTb-H4-3b8"/>
+                                <exclude reference="IgO-eu-UIz"/>
+                                <exclude reference="p1G-oF-EC5"/>
+                                <exclude reference="qbY-ck-ci9"/>
+                                <exclude reference="sSQ-Ns-LWh"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="4MC-BO-scp"/>
                                 <exclude reference="ii4-y7-WBD"/>
+                                <exclude reference="Oz5-kf-EaD"/>
+                                <exclude reference="Y7T-xf-GMN"/>
                                 <exclude reference="dkL-Wv-rhq"/>
-                                <exclude reference="plK-f1-1WJ"/>
                                 <exclude reference="qDh-fA-i9u"/>
+                                <exclude reference="4dn-mS-mE7"/>
+                                <exclude reference="MbO-60-qHs"/>
+                                <exclude reference="Upx-6i-iK0"/>
+                                <exclude reference="cXc-hU-imv"/>
+                                <exclude reference="lkx-78-PPz"/>
+                                <exclude reference="7SD-s9-d2l"/>
+                                <exclude reference="oaC-v3-sgf"/>
+                                <exclude reference="r57-Zp-4S9"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="UAn-sB-bR6"/>
                                 <include reference="aTb-H4-3b8"/>
+                                <include reference="IgO-eu-UIz"/>
+                                <include reference="p1G-oF-EC5"/>
+                                <include reference="qbY-ck-ci9"/>
+                                <include reference="sSQ-Ns-LWh"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="4MC-BO-scp"/>
                                 <include reference="ii4-y7-WBD"/>
+                                <include reference="Oz5-kf-EaD"/>
+                                <include reference="Y7T-xf-GMN"/>
                                 <include reference="dkL-Wv-rhq"/>
-                                <include reference="plK-f1-1WJ"/>
                                 <include reference="qDh-fA-i9u"/>
+                                <include reference="4dn-mS-mE7"/>
+                                <include reference="MbO-60-qHs"/>
+                                <include reference="Upx-6i-iK0"/>
+                                <include reference="cXc-hU-imv"/>
+                                <include reference="lkx-78-PPz"/>
+                                <include reference="7SD-s9-d2l"/>
+                                <include reference="oaC-v3-sgf"/>
+                                <include reference="r57-Zp-4S9"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="dJS-cu-8pA"/>
                     <connections>
+                        <outlet property="RESTKeyTextField" destination="sSQ-Ns-LWh" id="NT0-fw-7QI"/>
+                        <outlet property="appIDTextField" destination="IgO-eu-UIz" id="gft-H1-1YX"/>
                         <outlet property="appNameTextField" destination="aTb-H4-3b8" id="CU1-g1-lNN"/>
                     </connections>
                 </viewController>

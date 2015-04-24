@@ -3,6 +3,8 @@
 @interface PDVAddAppViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *appNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *appIDTextField;
+@property (weak, nonatomic) IBOutlet UITextField *RESTKeyTextField;
 
 @end
 
@@ -21,7 +23,7 @@
 }
 
 - (void)tappedSave {
-    [self.presenter saveAppNamed:self.appNameTextField.text];
+    [self.presenter saveAppNamed:self.appNameTextField.text withAppID:self.appIDTextField.text andRESTKey:self.RESTKeyTextField.text];
 }
 
 - (void)appWasAdded {

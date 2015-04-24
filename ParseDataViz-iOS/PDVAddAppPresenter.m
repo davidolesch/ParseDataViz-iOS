@@ -2,8 +2,8 @@
 
 @implementation PDVAddAppPresenter
 
-- (void)saveAppNamed:(NSString *)appName {
-    [self.interactor addAppNamed:appName];
+- (void)saveAppNamed:(NSString *)appName withAppID:(NSString *)appID andRESTKey:(NSString *)RESTKey {
+    [self.interactor addAppNamed:appName withAppID:appID andRESTKey:RESTKey];
 }
 
 - (void)updateAppWasAdded {

@@ -8,6 +8,6 @@
 @property (weak, nonatomic) id<PDVAddAppView> view;
 @property (strong, nonatomic) PDVAddAppInteractor *interactor;
 
-- (void)saveAppNamed:(NSString *)appName;
+- (void)saveAppNamed:(NSString *)appName withAppID:(NSString *)appID andRESTKey:(NSString *)RESTKey;
 
 @end

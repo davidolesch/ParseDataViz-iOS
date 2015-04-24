@@ -1,5 +1,6 @@
-#import "PDVUserApps.h"
 #import <objc/runtime.h>
+#import "PDVUserApps.h"
+#import "PDVApp.h"
 
 @interface PDVUserApps ()
 
@@ -9,7 +10,7 @@
 
 @implementation PDVUserApps
 
-- (void)addApp:(NSDictionary *)app {
+- (void)addApp:(PDVApp *)app {
     NSMutableArray *apps = [NSMutableArray arrayWithArray:self.apps];
     [apps addObject:app];
     self.apps = [NSArray arrayWithArray:apps];

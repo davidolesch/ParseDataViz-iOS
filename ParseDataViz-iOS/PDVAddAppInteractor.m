@@ -15,8 +15,8 @@
     return self;
 }
 
-- (void)addAppNamed:(NSString *)appName {
-    [self.dataManager addAppNamed:appName];
+- (void)addAppNamed:(NSString *)appName withAppID:(NSString *)appID andRESTKey:(NSString *)RESTKey{
+    [self.dataManager addAppNamed:appName withAppID:appID andRESTKey:RESTKey];
     [self.presenter updateAppWasAdded];
 }
 

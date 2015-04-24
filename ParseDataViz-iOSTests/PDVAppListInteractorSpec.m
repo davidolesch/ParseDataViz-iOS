@@ -3,6 +3,7 @@
 #define EXP_SHORTHAND
 #import "Expecta.h"
 #import <OCMock.h>
+#import "PDVApp.h"
 #import "PDVAppListInteractor.h"
 #import "PDVAppListPresenter.h"
 
@@ -13,7 +14,7 @@ __block PDVAppListInteractor *interactor;
 
 describe(@"Interactor", ^{
     beforeEach(^{
-        NSArray *apps = @[@{@"appName": @"app name", @"appID":@"appID", @"RESTKey":@"RESTKey", @"classes":@[]}];
+        NSArray *apps = @[[[PDVApp alloc] initWithName:@"app name" appId:@"appID" RESTKey:@"RESTKey" andClasses:@[]]];
         PDVDataManager *dataManager = [[PDVDataManager alloc] initWithApps:apps];
         interactor = [[PDVAppListInteractor alloc] initWithDataManager:dataManager];
         mock = [OCMockObject partialMockForObject:interactor];
