@@ -1,5 +1,6 @@
 #import "PDVDataManager.h"
 #import "PDVDataClient.h"
+#import "PDVDataPersistence.h"
 
 @interface PDVDataManager ()
 
@@ -11,7 +12,7 @@
 @implementation PDVDataManager
 
 - (instancetype)init {
-    return [self initWithApps:@[@{@"appName": @"Free2go", @"appID":@"<!--Your-app-ID-->", @"RESTKey":@"<!--Your-REST-key-->", @"classes":@[@"Reservation"]}]];
+    return [self initWithApps:[[PDVDataPersistence sharedInstance] allApps]];
 }
 
 - (instancetype)initWithApps:(NSArray *)apps {
@@ -48,6 +49,12 @@
 - (NSString *)RESTKeyForAppName:(NSString *)appName {
     NSDictionary *app = [self appDictionaryForAppName:appName];
     return app[@"RESTKey"];
+}
+
+- (void)addAppNamed:(NSString *)appName {
+    __block NSDictionary *app = @{@"appName": appName, @"appID":@"appID", @"RESTKey":@"RESTKey", @"classes":@[@"class name"]};
+
+    [[PDVDataPersistence sharedInstance] addApp:app];
 }
 
 - (void)findColumnsForAppName:(NSString *)appName andClassName:(NSString *)className withSuccess:(void (^)(NSArray *))successBlock andFailure:(void (^)(NSString *errorMessage))failureBlock {

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1rx-Vf-hs6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1rx-Vf-hs6">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -69,19 +70,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Tk-yF-67U" userLabel="distinct count">
                                 <rect key="frame" x="16" y="59" width="240" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000000000000009" translatesAutoresizingMaskIntoConstraints="NO" id="gPy-Qt-cVF" userLabel="y title">
                                 <rect key="frame" x="344" y="59" width="240" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IR1-g3-7AG" userLabel="column name">
                                 <rect key="frame" x="16" y="30" width="240" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -147,7 +148,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfh-Sf-HNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-123" y="2178"/>
+            <point key="canvasLocation" x="-127.5" y="2220"/>
+        </scene>
+        <!--Add App View Controller-->
+        <scene sceneID="Qel-mW-kVZ">
+            <objects>
+                <viewController storyboardIdentifier="AddAppViewController" id="KLf-O8-iWn" customClass="PDVAddAppViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bKp-Lr-nqP"/>
+                        <viewControllerLayoutGuide type="bottom" id="6P9-cM-J9N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O1F-cE-f91">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAn-sB-bR6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTb-H4-3b8">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UAn-sB-bR6" firstAttribute="top" secondItem="bKp-Lr-nqP" secondAttribute="bottom" constant="12" id="4MC-BO-scp"/>
+                            <constraint firstItem="aTb-H4-3b8" firstAttribute="trailing" secondItem="O1F-cE-f91" secondAttribute="trailingMargin" id="dkL-Wv-rhq"/>
+                            <constraint firstItem="UAn-sB-bR6" firstAttribute="leading" secondItem="O1F-cE-f91" secondAttribute="leadingMargin" id="ii4-y7-WBD"/>
+                            <constraint firstItem="aTb-H4-3b8" firstAttribute="top" secondItem="bKp-Lr-nqP" secondAttribute="bottom" constant="8" symbolic="YES" id="plK-f1-1WJ"/>
+                            <constraint firstItem="aTb-H4-3b8" firstAttribute="leading" secondItem="UAn-sB-bR6" secondAttribute="trailing" constant="78" id="qDh-fA-i9u"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="UAn-sB-bR6"/>
+                                <exclude reference="aTb-H4-3b8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4MC-BO-scp"/>
+                                <exclude reference="ii4-y7-WBD"/>
+                                <exclude reference="dkL-Wv-rhq"/>
+                                <exclude reference="plK-f1-1WJ"/>
+                                <exclude reference="qDh-fA-i9u"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="UAn-sB-bR6"/>
+                                <include reference="aTb-H4-3b8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4MC-BO-scp"/>
+                                <include reference="ii4-y7-WBD"/>
+                                <include reference="dkL-Wv-rhq"/>
+                                <include reference="plK-f1-1WJ"/>
+                                <include reference="qDh-fA-i9u"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="dJS-cu-8pA"/>
+                    <connections>
+                        <outlet property="appNameTextField" destination="aTb-H4-3b8" id="CU1-g1-lNN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xah-ey-mUG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121.5" y="2874"/>
         </scene>
     </scenes>
 </document>

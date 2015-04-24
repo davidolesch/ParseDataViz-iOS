@@ -1,3 +1,4 @@
+#import "PDVAddAppViewController.h"
 #import "PDVAppWireframe.h"
 #import "PDVAppListViewController.h"
 #import "PDVAppListPresenter.h"
@@ -96,6 +97,25 @@
     
     UINavigationController *navigationController = [self navigationControllerFromWindow:self.window];
     [navigationController pushViewController:detailViewController animated:YES];
+}
+
+- (void)presentAddApp {
+    PDVAddAppViewController *addAppViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:kAddAppViewControllerStoryboardID];
+    
+    PDVAddAppPresenter *presenter = [[PDVAddAppPresenter alloc] init];
+    PDVAddAppInteractor *interactor = [[PDVAddAppInteractor alloc] initWithDataManager:self.dataManager];
+    
+    // Strong references.
+    addAppViewController.presenter = presenter;
+    presenter.interactor = interactor;
+    
+    // Weak references.
+    interactor.presenter = presenter;
+    presenter.view = addAppViewController;
+    
+    UINavigationController *addAppNavigationViewController = [[UINavigationController alloc] initWithRootViewController:addAppViewController];
+    UINavigationController *navigationController = [self navigationControllerFromWindow:self.window];
+    [navigationController presentViewController:addAppNavigationViewController animated:YES completion:nil];
 }
 
 @end

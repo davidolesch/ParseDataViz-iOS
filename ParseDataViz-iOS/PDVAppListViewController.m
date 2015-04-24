@@ -12,6 +12,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"Apps";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self.presenter action:@selector(selectAddApp)];
     [self.presenter updateView];
 }
 

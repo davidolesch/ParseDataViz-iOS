@@ -11,5 +11,6 @@
 
 - (void)updateView;
 - (void)selectAppNamed:(NSString *)appName;
+- (void)selectAddApp;
 
 @end

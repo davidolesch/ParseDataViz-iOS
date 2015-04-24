@@ -14,6 +14,10 @@
     [self.interactor requestClassesForAppNamed:appName];
 }
 
+- (void)selectAddApp {
+    [self.appWireframe presentAddApp];
+}
+
 - (void)updateClasses:(NSArray *)classes forAppNamed:(NSString *)appName {
     if (classes.count > 1) {
         [self.appWireframe presentClassListForAppNamed:appName];
