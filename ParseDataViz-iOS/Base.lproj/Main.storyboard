@@ -163,35 +163,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAn-sB-bR6">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <rect key="frame" x="16" y="32" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTb-H4-3b8">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <rect key="frame" x="176" y="28" width="408" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IgO-eu-UIz">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <rect key="frame" x="147" y="66" width="437" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1G-oF-EC5">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <rect key="frame" x="16" y="66" width="53" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REST Key" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbY-ck-ci9">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <rect key="frame" x="16" y="104" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSQ-Ns-LWh">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <rect key="frame" x="172" y="104" width="412" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -222,31 +222,6 @@
                             </constraint>
                             <constraint firstItem="aTb-H4-3b8" firstAttribute="top" secondItem="bKp-Lr-nqP" secondAttribute="bottom" constant="8" symbolic="YES" id="tLx-ga-Ap3"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="UAn-sB-bR6"/>
-                                <exclude reference="aTb-H4-3b8"/>
-                                <exclude reference="IgO-eu-UIz"/>
-                                <exclude reference="p1G-oF-EC5"/>
-                                <exclude reference="qbY-ck-ci9"/>
-                                <exclude reference="sSQ-Ns-LWh"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="ii4-y7-WBD"/>
-                                <exclude reference="Oz5-kf-EaD"/>
-                                <exclude reference="Y7T-xf-GMN"/>
-                                <exclude reference="dkL-Wv-rhq"/>
-                                <exclude reference="qDh-fA-i9u"/>
-                                <exclude reference="4dn-mS-mE7"/>
-                                <exclude reference="MbO-60-qHs"/>
-                                <exclude reference="Upx-6i-iK0"/>
-                                <exclude reference="cXc-hU-imv"/>
-                                <exclude reference="lkx-78-PPz"/>
-                                <exclude reference="7SD-s9-d2l"/>
-                                <exclude reference="oaC-v3-sgf"/>
-                                <exclude reference="r57-Zp-4S9"/>
-                            </mask>
-                        </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="UAn-sB-bR6"/>
@@ -257,16 +232,16 @@
                                 <include reference="sSQ-Ns-LWh"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="ii4-y7-WBD"/>
-                                <include reference="Oz5-kf-EaD"/>
-                                <include reference="Y7T-xf-GMN"/>
-                                <include reference="dkL-Wv-rhq"/>
-                                <include reference="qDh-fA-i9u"/>
                                 <include reference="4dn-mS-mE7"/>
                                 <include reference="MbO-60-qHs"/>
                                 <include reference="Upx-6i-iK0"/>
                                 <include reference="cXc-hU-imv"/>
                                 <include reference="lkx-78-PPz"/>
+                                <include reference="ii4-y7-WBD"/>
+                                <include reference="dkL-Wv-rhq"/>
+                                <include reference="qDh-fA-i9u"/>
+                                <include reference="Oz5-kf-EaD"/>
+                                <include reference="Y7T-xf-GMN"/>
                                 <include reference="7SD-s9-d2l"/>
                                 <include reference="oaC-v3-sgf"/>
                                 <include reference="r57-Zp-4S9"/>
